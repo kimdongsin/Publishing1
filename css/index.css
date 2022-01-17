@@ -12,15 +12,13 @@ main {
 }
 
 .main__box {
-    width: 600px;
+    width: 540px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .main__logo {
-    width: 100%;
-    height: 40px;
     display: flex;
     align-items: center;
 }
@@ -48,13 +46,15 @@ main {
 }
 
 .main__middle {
+    width: 100%;
     padding: 20px 0 25px;
-    border-top: 1px solid #BEBEBE;
-    border-bottom: 1px solid #BEBEBE;
+    border-top: 1px solid #EBECF2;
+    border-bottom: 1px solid #EBECF2;
     margin: 20px 0;
 }
 
 .main__footer__text {
+    width: 100%;
     font-size: 12px;
     line-height: 20px;
     color: #BEBEBE;
@@ -70,11 +70,25 @@ main {
 }
 
 .main__logo img {
-    width: 120px;
-    height: 25px;
+    width: 110px;
+    height: 22px;
 }
 
 .main__middle__p p:last-child {
     margin-top: 10px;
     color: #BEBEBE;
+}
+
+@media (max-width: 768px) {
+    .main__box {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 460px) {
+    .main__box {
+        width: 89%;
+        margin: 0 auto;
+    }
 }
