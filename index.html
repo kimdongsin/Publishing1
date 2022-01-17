@@ -5,34 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>mail</title>
 </head>
 
 <body>
-    <style>
-        #divBox {
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            border: 5px solid green;
-            margin-top: 20px;
-        }
-    </style>
-    <script>
-        $(function() {
-            $("#slideUpBtn").on("click", function() {
-                $("#divBox").slideUp();
-            })
-            $("#slideDownBtn").on("click", function() {
-                $("#divBox").slideDown();
-            })
-        })
-    </script>
-    <h1>슬라이드 업과 슬라이드 다운</h1>
-    <button id="slideUpBtn">슬라이드 업</button>
-    <button id="slideDownBtn">슬라이드 다운</button>
-    <div id="divBox"></div>
+    <div id="container">
+        <div class="main">
+            <div class="main__box">
+                <div class="main__logo">
+                    <img src="images/Link_Tube_black.png">
+                </div>
+
+                <div class="main__middle">
+                    <h1><b class="color1">5</b>명이 관심을 보였어요!</h1>
+
+                    <div class="main__middle__p">
+                        <p>고객님께서 요청하신 비밀번호 찾기는</p>
+                        <p>아래 버튼을 클릭하셔서 새로운 비밀번호로 변경을 해주셔야합니다.</p>
+                        <p>재설정 링크는 24시간 동안 유효합니다.</p>
+                    </div>
+
+                    <a href="#" class="main__middle__btn">
+                        <span>비밀번호 재설정</span>
+                    </a>
+                </div>
+
+                <div class="main__footer">
+                    <div class="main__footer__text">
+                        <p>이 메일은 발신전용 메일입니다.</p>
+                        <p>궁금하신 사항이나 불편한 사항은 <b class="color2">고객센터</b>로 문의 주시기 바랍니다.</p>
+                        <p>Copyright © LinkTube Corp. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
