@@ -75,6 +75,7 @@ main {
 .main__logo img {
     width: 120px;
     height: auto;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .main__middle__p p:last-child {
