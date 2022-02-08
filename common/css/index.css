@@ -1,0 +1,122 @@
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_title > h1{
+    font-size: 40px;
+}
+
+.main_title > span{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* form */
+
+input{
+    padding: 0 5%;
+    border: 1px solid #BCBCBC;
+    height: 50px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.main_form{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 450px;
+}
+
+.form_id{
+    width: 100%;
+}
+
+.form_id > input{
+    width: 100%;
+}
+
+.main_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.main_form > div:not(:first-child) {
+    margin-top: 18px;
+}
+
+.form_pwd_box input{
+    width: 100%;
+}
+
+/* 회원가입 버튼 */
+
+.signBtn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+.signBtn button{
+    width: 48%;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.signBtn button:first-child{
+    background-color: #ffffff;
+    border: 1px solid #49539E;
+    color: #4653A3;
+}
+
+.signBtn button:last-child{
+    background-color: #4653A3;
+    border: 1px solid #49539E;
+    color: #ffffff;
+}
+
+
+/* 정보동의 체크박스 */
+
+.check{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.check input{
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+.check span{
+    margin-top: 2px;
+}
+
+
+.purpose, textarea{
+    width: 100%;
+}
+
+textarea{
+    border: 1px solid #BCBCBC;
+    resize:none;
+    overflow-y: scroll;
+    padding: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+}

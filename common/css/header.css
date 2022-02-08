@@ -1,0 +1,40 @@
+header{
+    height: 80px;
+    border-bottom: 1px solid #bebebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.nav h1{
+    font-size: 36px;
+    color: blue;
+}
+
+.nav_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav_div > img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3px;
+}
+
+.nav_div > span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
