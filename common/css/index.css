@@ -55,6 +55,9 @@
     height: 42px;
 }
 
+
+/* 수강신청 버튼 */
+
 .main__top__btn button:first-child{
     display: inline-block;
     background: linear-gradient( to right, #6fa7bb, #277397 );
@@ -68,6 +71,34 @@
     border-radius: 12px;
     border: none;
 }
+
+/* 수강완료 버튼  */
+
+.completion{
+    display: inline-block;
+    background: #777777;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    font-size: 15px;
+    color: #fff!important;
+    width: 60%;
+    line-height: 42px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* 화면단 숨김 표시는 여기 클래스를 사용해주세요. */
+
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+
 
 .main__top__btn button:last-child{
     width: 30%;
