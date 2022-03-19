@@ -70,6 +70,7 @@
     line-height: 42px;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 
 /* 수강완료 버튼  */
@@ -86,6 +87,7 @@
     line-height: 42px;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 
 /* 화면단 숨김 표시는 여기 클래스를 사용해주세요. */
@@ -104,12 +106,13 @@
     border: none;
     background-color: #333333;
     color: #c9c9c9;
+    cursor: pointer;
 }
 
 /* 덧글 부분 */
 
 .comment{
-    padding-top: 15px;
+    padding: 15px 0;
     width: 90%;
     display: flex;
     flex-direction: column;
