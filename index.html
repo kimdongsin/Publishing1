@@ -11,17 +11,35 @@
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
+
+    
 </head>
 
 <body>
-    <div class="search__wrapper">
+    <div id="search__box" class="search__wrapper">
         <div class="search__wrapper__box">
             <input type="text">
             <button class="search__wrapper__box__button">
                 <span>검 색</span>
             </button>
         </div>
+
     </div>
+    <button id="search__click">js테스트</button>
+
+    <script>
+        const search = document.querySelector('#search__box');
+        const searchBox = document.querySelector('#search__click');
+
+
+        
+        console.log(search);
+
+        searchBox.addEventListener("click", function () {
+            search.style.display = (search.style.display != "none"? "none" : "flex");
+            
+        })
+    </script>
 </body>
 
 </html>
