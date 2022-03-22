@@ -126,3 +126,8 @@ table {
     box-sizing: border-box;
     text-decoration: none;
 }
+
+button{
+    cursor: pointer;
+    border: none;
+}
