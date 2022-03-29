@@ -1,32 +1,112 @@
-.search__wrapper{
-    width: 100%;
-    height: 72px;
-    background-color: #D0ECF8;
+.overly{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.login__wrapper{
+    max-width: 480px;
+    width: 90%;
+    height: 520px;
+    background-color: #f5f6f8;
+    margin: 0 auto;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.search__wrapper__box{
-    width: 90%;
+.form__h1{
+    color: #3980a0;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.id__wrapper{
+    width: 89%;
+}
+
+.id__wrapper > span{
+    font-size: 12px;
+    color: #635e60;
+}
+
+.id__form{
+    margin-top: 10px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.id__form *{
+    color: #777777;
+}
+
+.id_wrapper__cel{
+    border: 1px solid #e3e3e3;
     display: flex;
     align-items: center;
     height: 40px;
-    border: 2px solid #257296;
+    border-top: none;
 }
 
-.search__wrapper__box > input{
-    width: 80%;
+.id_wrapper__cel > p{
+    width: 30%;
     height: 100%;
-    border: none;
-    padding: 0 2%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 10px;
 }
 
-.search__wrapper__box__button{
-    width: 20%;
-    height: 37px;
-    background-color: #257296;
+.id__wrapper__celt{
+    width: 70%;
+    height: 100%;
+    padding-left: 12px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.id__wrapper__celt input{
+    height: 25px;
+    border: 1px solid #e2e3e3;
+    background-color: #f3f4f5;
+    padding: 0 2%;
+    font-size: 12px;
+}
+
+.btn__wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn__wrapper button{
     color: #ffffff;
-    font-size: 14px;
-    font-weight: bold;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    padding: 2px 20px;
+}
+
+.btn__wrapper button:first-child{
+    background: linear-gradient( to right, #6fa7bb, #277397 );
+    margin-right: 10px; 
+}
+
+.btn__wrapper button:last-child{
+    background: #575757;
+}
+
+.login__wrapper .id__wrapper:first-child .btn__wrapper{
+    margin-bottom: 30px;
 }

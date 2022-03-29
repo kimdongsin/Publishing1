@@ -7,39 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./common/css/reset.css">
     <link rel="stylesheet" href="./common/css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./common/css/fonts.css">
     <title>Document</title>
-
-    
 </head>
 
 <body>
-    <div id="search__box" class="search__wrapper">
-        <div class="search__wrapper__box">
-            <input type="text">
-            <button class="search__wrapper__box__button">
-                <span>검 색</span>
-            </button>
+    <div class="overly"></div>
+    <div class="login__wrapper">
+        <div class="id__wrapper">
+            <h1 class="form__h1">ID 찾기</h1>
+            <span>아이디를 잊으셨나요?</span><br>
+            <span>아래 사항을 입력해 주시면 회원님의 아이디를 찾아드립니다.</span>
+
+            <form class="id__form">
+                <div class="id_wrapper__cel">
+                    <p>*이름</p>
+                    <div class="id__wrapper__celt">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="id_wrapper__cel">
+                    <p>*이메일</p>
+                    <div class="id__wrapper__celt">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="btn__wrapper">
+                    <button>확인</button>
+                    <button>취소</button>
+                </div>
+            </form>
         </div>
 
+        <div class="id__wrapper">
+            <h1 class="form__h1">비밀번호 찾기</h1>
+            <span>비밀번호를 잊으셨나요?</span><br>
+            <span>아래 사항을 입력해 주시면 임시 비밀번호를 메일로 보내드립니다.</span>
+
+            <form class="id__form">
+                <div class="id_wrapper__cel">
+                    <p>*아이디</p>
+                    <div class="id__wrapper__celt">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="id_wrapper__cel">
+                    <p>*이름</p>
+                    <div class="id__wrapper__celt">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="id_wrapper__cel">
+                    <p>*이메일</p>
+                    <div class="id__wrapper__celt">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="btn__wrapper">
+                    <button>확인</button>
+                    <button>취소</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <button id="search__click">js테스트</button>
-
-    <script>
-        const search = document.querySelector('#search__box');
-        const searchBox = document.querySelector('#search__click');
-
-
-        
-        console.log(search);
-
-        searchBox.addEventListener("click", function () {
-            search.style.display = (search.style.display != "none"? "none" : "flex");
-            
-        })
-    </script>
 </body>
 
 </html>
